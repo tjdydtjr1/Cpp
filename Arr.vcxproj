@@ -129,7 +129,9 @@
   <ItemGroup>
     <ClCompile Include="Arr.cpp" />
     <ClCompile Include="LinkedList.cpp" />
-    <ClCompile Include="LinkedList_main.cpp" />
+    <ClCompile Include="LinkedList_main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="정렬부분main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
