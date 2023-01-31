@@ -12,7 +12,7 @@ void InitArr(tArr* _pArr)
 void Reallocate(tArr* _pArr)
 {
 	// 1. 2배 큰 공간을 동적할당
-	int* pNew = (int*)malloc(_pArr->iMaxCount * 2 * sizeof(int));
+	int* pNew = (int*)malloc((_pArr->iMaxCount * 2) * sizeof(int));
 
 	// 2. 기존 공간에 있던 데이터들을 새로 할당한 공간으로 복사
 	for (int i = 0; i < _pArr->iCount; ++i)

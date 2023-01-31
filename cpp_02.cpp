@@ -35,32 +35,44 @@ int main(void)
 
 	// 4. 추상화
 
-	
-
 	// C++ 동적할당 new, delete
 
 	// 구조체 버전 가변배열 --> 클래스 버전
-	// CArr 예시
-	tArr arr = {};
-	InitArr(&arr);
+	// 구조체 방식
+	//tArr arr = {};
+	//InitArr(&arr);
 
-	PushBack(&arr, 10);
-	PushBack(&arr, 20);
-	PushBack(&arr, 30);
+	//PushBack(&arr, 10);
+	//PushBack(&arr, 20);
+	//
+	//ReleaseArr(&arr);
 
-	ReleaseArr(&arr);
+	//// class 방식
+	//CArr carr;
+	//carr.push_back(10);
+	//carr.push_back(20);
+	//
+	//int iData = carr[1];
+	//carr[1] = 100;
 
-	CArr carr;
+
+	// 함수 템플릿
+	int i = Add<int>(10, 20);
+
+	// 클래스 템플릿
+	CArr<int> carr;
 	carr.push_back(10);
 	carr.push_back(20);
 	carr.push_back(30);
 
 	int iData = carr[1];
-	carr[1] = 100;
 
+	CArr<float> carr2;
+	carr2.push_back(3.14f);
+	carr2.push_back(5.14f);
+	carr2.push_back(7.14f);
 
-	// 함수 템플릿
-	int i = Add<int>(10, 20);
+	float fData = carr2[1];
 
 	return 0;
 }
