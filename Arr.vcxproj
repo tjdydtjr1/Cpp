@@ -128,6 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arr.cpp" />
+    <ClCompile Include="CArr.cpp" />
+    <ClCompile Include="cpp_01.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="cpp_02.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="LinkedList_main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -138,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arr.h" />
+    <ClInclude Include="CArr.h" />
     <ClInclude Include="LinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
