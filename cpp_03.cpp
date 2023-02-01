@@ -2,6 +2,8 @@
 
 #include "CList.h"
 
+
+
 int main(void)
 {
 	CList<float> list;
@@ -11,9 +13,8 @@ int main(void)
 		list.push_back(i);
 	}
 
-	std::cout << "test" << 3.14f << std::endl;
-	int i = 0;
-	std::cin >> i;
+	
+
 
 	return 0;
 }
