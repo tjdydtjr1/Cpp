@@ -2,7 +2,7 @@
 
 typedef struct _tagArr
 {
-	int* pInt;
+	int*	pInt;
 	int		iCount;
 	int		iMaxCount;
 }tArr;
